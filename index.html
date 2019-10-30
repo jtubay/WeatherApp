@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/style.css">
+
 </head>
+
 <body>
-    <div class="input">
-        <input type="text" class="inputValue" placeholder="Enter a City">
-        <input type="submit" value="submit" class="button">
+
+    <div class="jumbotron">
+        <h2 class="text-center">Get Current Weather</h2>
     </div>
 
-    <div class="display">
-        <h1>
-            <p class="name"></p>
-            <p class="desc"></p>
-            <p class="hum"></p>
-            <p class="temp"></p>
-        </h1>
+    <div class="container">
+        <div class="row">
+            <h3 class="text-primary">Enter City Name</h3>
+            
+        </div>
+        <div class="row form-group form-inline" id="rowDiv">
+            <input type="text" name="city" id="city" class="form-control ml-5" placeholder="City Name"> 
+            <button id="submitWeather" class="btn btn-primary ml-1">Search City</button>
+        </div>
+
+        <div id="show">
+
+        </div>
+        <span id="error"></span>
     </div>
 
-    <script src="./script.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./Assets/script.js"></script>
 </body>
+
 </html>
