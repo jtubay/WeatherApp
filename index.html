@@ -13,37 +13,36 @@
 </head>
 
 <body>
-
+    <!--Main header container-->
     <div class="jumbotron bg-dark">
         <h2 class="text-center">Weather Dashboard</h2>
     </div>
-
+    <!--displays search section-->
     <div class="container">
         <div class="row">
             <div class="col-4" id="left-side">
-
                 <h3 class="text-primary text-dark">Enter City Name</h3>
-
                 <input type="text" name="city" id="city" class="float-left mb-2" placeholder="City Name">
                 <button id="submitWeather" class="btn btn-dark">Search City</button>
                 <button id="secondBtn">Second</button>
-
             </div>
+    <!--Where info will be displayed-->
             <div class="col-8">
                 <div id="requestedTemp">
                     <h5 id="temp"></h5>
-
                 </div>
                 <span id="error"></span>
             </div>
         </div>
     </div>
+
+    <!--footer-->
     <div class="footer bg-dark">
         <div class="container bg-dark">
             <div class="row text-center" style="padding-top:30px;">
                 <div class="col-5"></div>
                 <div class="col-auto">
-                    <p style ="color: white;">Copyright &copy; Weather App</p>
+                    <p style="color: white;">Copyright &copy; Weather App</p>
                 </div>
                 <div class="col-5"></div>
             </div>
