@@ -5,3 +5,4 @@ The weather app displays information for a city based on the user's request. The
 https://github.com/jtubay/WeatherApp.git
 https://jtubay.github.io/WeatherApp/
 
+# screenShots of final version
