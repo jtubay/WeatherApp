@@ -15,7 +15,7 @@ $(document).ready(function() {
     //makes sure search input is not empty
     if (city !== "") {
       const queryURL =
-        "http://api.openweathermap.org/data/2.5/weather?q=" +
+        "https://api.openweathermap.org/data/2.5/weather?q=" +
         city +
         "&units=imperial" +
         "&appid=166a433c57516f51dfab1f7edaed8413";
@@ -35,7 +35,7 @@ $(document).ready(function() {
         });
         const weatherIcon = $("<img>").attr(
           "src",
-          "http://openweathermap.org/img/wn/" +
+          "https://openweathermap.org/img/wn/" +
             response.weather[0].icon +
             ".png"
         );
